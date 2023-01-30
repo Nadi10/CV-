@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Manrope-Regular, sans-serif;
+    src: url("../fonts/Manrope-Regular.ttf");
+}
+
+@font-face {
+    font-family: Manrope-Bold, sans-serif;
+    src: url("../fonts/Manrope-Bold.ttf");
+}
+
+@font-face {
+    font-family: Manrope-ExtraBold, sans-serif;
+    src: url("../fonts/Manrope-ExtraBold.ttf");
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 24px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 15px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo{
+    animation: circle-animation 4s linear infinite;
+}
+@keyframes circle-animation {
+    from{
+        transform:scale(0.5);
+    }
+
+    50%{
+        transform:scale(1);
+    }
+
+    to{
+        transform:scale(0.5);
+    }
+}
+
+.header-nav {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0 40px;
+}
+.header-nav a:hover {
+    text-decoration: underline black;
+}
+
+.header-burger{
+    display: none;
+}
+
+.about-left-photo {
+    position: relative;
+}
+
+.hello {
+    position: absolute;
+    left: -245px;
+    top: 480px;
+    font-family: 'Manrope-Bold';
+    font-size: 128px;
+    line-height: 155px;
+    color: #000000;
+    transform: rotate(-90deg);
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-left {
+    max-width: 500px;
+    margin-right: 60px;
+}
+
+.about-left-photo {
+    margin-bottom: 60px;
+}
+
+.about-left-text {
+    font-family: 'Manrope-Regular';
+    font-size: 22px;
+    line-height: 160.1%;
+    letter-spacing: 0.1em;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 100px;
+}
+
+.about-left-skills {
+    font-family: 'Manrope-Bold';
+    color: #000000;
+}
+
+.about-left-skills h3 {
+    font-family: 'Manrope-Bold';
+    font-size: 52px;
+    margin-bottom: 50px;
+}
+
+.about-left-skills-gray {
+    width: 420px;
+    height: 18px;
+    background: #EEEFF2;
+    border-radius: 49px;
+    margin: 5px 0 35px 0;
+}
+
+.about-left-skills-html-black {
+    width: 378px;
+    height: 18px;
+    background: #000000;
+    border-radius: 49px;
+}
+
+.about-left-skills-css-black {
+    width: 347.76px;
+    height: 18px;
+    background: #000000;
+    border-radius: 49px;
+}
+
+.about-left-skills-js-black {
+    width: 190.71px;
+    height: 18px;
+    background: #000000;
+    border-radius: 49px;
+}
+
+.about-left-skills-figma-black {
+    width: 302.89px;
+    height: 18px;
+    background: #000000;
+    border-radius: 49px;
+}
+
+.about-left-skills-photoshop-black {
+    width: 207.54px;
+    height: 18px;
+    background: #000000;
+    border-radius: 49px;
+}
+
+.about-left-interest {
+    margin-top: 65px;
+    max-width: 400px;
+}
+
+.about-left-interest h3 {
+    font-family: 'Manrope-ExtraBold';
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.about-left-interest-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-left-interest-icon img:hover {
+    transform: scale(1.5);
+}
+
+.about-right {
+    max-width: 500px;
+    margin-left: 60px;
+}
+
+.about-right-info h1 {
+    font-family: 'Manrope-Bold';
+    font-size: 76px;
+    line-height: 80px;
+    letter-spacing: -0.015em;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.about-right-info-profession {
+    font-family: 'Manrope-Bold';
+    font-size: 32px;
+    line-height: 44px;
+}
+
+.about-right-info-contacts {
+    font-family: 'Manrope-Regular';
+    line-height: 160.1%;
+    letter-spacing: 0.1em;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 25px;
+}
+
+.about-right-socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    gap: 10px;
+    height: 50px;
+    max-width: 360px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin-top: 30px;
+}
+.about-right-socials a img{
+    margin-top: 5px;
+}
+
+.about-right-graduation h3 {
+    margin-top: 100px;
+    margin-bottom: 25px;
+    font-family: 'Manrope-ExtraBold';
+    font-size: 28px;
+    line-height: 38px;
+    color: #000000;
+}
+
+.about-right-graduation-university {
+    font-family: 'Manrope-Regular';
+    line-height: 160.1%;
+    letter-spacing: 0.1em;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.about-right-values h3 {
+    margin-top: 100px;
+    margin-bottom: 25px;
+    font-family: 'Manrope-ExtraBold';
+    font-size: 28px;
+    line-height: 38px;
+    color: #000000;
+}
+
+.about-right-values-list {
+    font-family: 'Manrope-Regular';
+    line-height: 160.1%;
+    letter-spacing: 0.1em;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.about-right-languages h3 {
+    margin-top: 100px;
+    margin-bottom: 25px;
+    font-family: 'Manrope-ExtraBold';
+    font-size: 28px;
+    line-height: 38px;
+    color: #000000;
+}
+
+.about-right-languages-list {
+    font-family: 'Manrope-Regular';
+    line-height: 160.1%;
+    letter-spacing: 0.1em;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.about-right-expertise h3 {
+    margin-top: 100px;
+    margin-bottom: 25px;
+    font-family: 'Manrope-ExtraBold';
+    font-size: 28px;
+    line-height: 38px;
+    color: #000000;
+}
+
+.about-right-expertise-list {
+    font-family: 'Manrope-Regular';
+    line-height: 160.1%;
+    letter-spacing: 0.1em;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.skills-head {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills-head-name {
+    font-family: 'Manrope-Regular';
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.skills-head h3 {
+    font-family: 'Manrope-Regular';
+    font-size: 72px;
+    line-height: 98px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.skills-cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.skills-card {
+    width: 300px;
+    height: 200px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills-card-icon {
+    z-index: 2;
+}
+
+.skills-card-text {
+    font-family: 'Manrope-Regular';
+    font-size: 18px;
+    line-height: 160.1%;
+    margin-top: 40px;
+}
+
+.skills-card:hover {
+    color: rgba(255, 255, 255, 0.5);
+    background: black;
+}
+
+.skills-card:hover svg path {
+    fill: white;
+}
+
+.case {
+    margin-top: 132px;
+}
+
+.case-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.case-head-name {
+    font-family: 'Manrope-Regular';
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.case-head-name h3 {
+    font-family: 'Manrope-Regular';
+    font-size: 72px;
+    line-height: 98px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.case-head-arrows {
+    display: flex;
+    align-items: center;
+}
+
+.case-head-arrows-left {
+    margin-right: 40px;
+}
+.case-head-arrows-left:hover svg path {
+    fill-opacity: 1;
+}
+.case-head-arrows-right:hover svg path {
+    fill-opacity: 1;}
+
+.case-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.case-body-photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.case-body-photo2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.case-body-photo3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.case-body-photo img {
+    width: 1071px;
+    height: 455px;
+
+}
+.case-body-text {
+    font-family: 'Manrope-Regular';
+    color: #000000;
+    margin-top: 25px;
+
+}
+.case-body-photo2 img {
+    width: 1071px;
+    height: 455px;
+
+}
+.case-body-text2 {
+    font-family: 'Manrope-Regular';
+    color: #000000;
+    margin-top: 25px;
+
+}
+.case-body-photo3 img {
+    width: 1071px;
+    height: 455px;
+
+}
+.case-body-text3 {
+    font-family: 'Manrope-Regular';
+    color: #000000;
+    margin-top: 25px;
+
+}
+
+
